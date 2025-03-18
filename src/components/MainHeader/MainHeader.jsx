@@ -1,13 +1,13 @@
 import './MainHeader.css'
-import Navigation from './Navigation'
+import Navigation from './Navigation';
 
 const MainHeader = (props) => {
     return (
-    <header className='main-header'>
-        <h1>A typical Page</h1>
-        <Navigation loggedIn={props.isAuthenticated} onLogout={props.onLogout} />
-    </header>     
-  )
+        <header className='main-header'>
+            <h1>A Typical Page</h1>
+            <Navigation onLogout={props.onLogout} />
+        </header>
+    )
 }
 
-export default MainHeader
+export default MainHeader;
