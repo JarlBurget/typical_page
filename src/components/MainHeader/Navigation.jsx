@@ -1,4 +1,6 @@
 import './Navigation.css'
+import Button from '../UI/Button'
+
 
 const Navigation = (props) => {
     return (
@@ -12,7 +14,7 @@ const Navigation = (props) => {
                 </li>
                 {props.loggedIn && (
                     <li>
-                        <button onClick={props.onLogout}>Logout</button>
+                        <Button onClick={props.onLogout}>Logout</Button>
                     </li>
                 )}
             </ul>
